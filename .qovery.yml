@@ -1,0 +1,15 @@
+---
+application:
+  name: "api-1"
+  project: "test-api"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "expressdb"
+  version: "4.4"
+routers:
+- name: "main-api-1"
+  routes:
+  - application_name: "api-1"
+    paths:
+    - "/*"
